@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:gravity="center"
+	android:background="@drawable/trippybackgroundthree">
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:inputType="textPersonName"
+		android:layout_width="wrap_content"
+		android:hint="First Name"
+		android:id="@+id/hippynamesEditText1"
+		android:textColorHint="#FFFFFF"/>
+
+	<DatePicker
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:id="@+id/hippynamesDatePicker1"/>
+
+	<RadioGroup
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:gravity="center">
+
+		<RadioButton
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Male"
+			android:paddingLeft="15dp"
+			android:id="@+id/hippynamesRadioButton1"/>
+
+		<RadioButton
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Female"
+			android:id="@+id/hippynamesRadioButton2"/>
+
+	</RadioGroup>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="center">
+
+		<Button
+			android:layout_height="wrap_content"
+			android:text="Submit"
+			android:layout_width="wrap_content"
+			android:id="@+id/hippynamesButton1"
+			android:onClick="submitInfo"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:text="Back to main"
+			android:layout_width="wrap_content"
+			android:onClick="backToMain"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
